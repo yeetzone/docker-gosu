@@ -1,5 +1,4 @@
 FROM debian:10-slim as GOSU
-MAINTAINER OOMPHWORKS <support@oomph.works>
 
 # Set build arguments.
 ARG GOSU_VERSION
@@ -21,7 +20,7 @@ RUN set -ex \
 	&& gosu nobody true
 
 FROM debian:10-slim
-MAINTAINER OOMPHWORKS <support@oomph.works>
+MAINTAINER YEET Zone <support@yeet.zone>
 
 # Install gosu.
 COPY --from=GOSU /usr/local/bin/gosu /usr/local/bin/gosu
