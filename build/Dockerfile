@@ -8,7 +8,7 @@ ENV GOSU_VERSION ${GOSU_VERSION:-1.12}
 RUN set -ex \
 	# Install dependencies.
 	&& apt-get update \
-	&& apt-get install -y --no-install-recommends wget ca-certificates gnupg2 dirmngr \
+	&& apt-get install --yes --no-install-recommends wget ca-certificates gnupg2 dirmngr \
 	# Install gosu.
 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" \
 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" \
