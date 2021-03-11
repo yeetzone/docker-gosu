@@ -1,5 +1,5 @@
 # gosu
-> Dockerfile for building a `[gosu]` image.
+> Dockerfile for building a [`gosu`][gosu] image.
 
 ---
 
