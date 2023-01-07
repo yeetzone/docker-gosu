@@ -2,7 +2,7 @@ FROM debian:10-slim as GOSU
 
 # Set build arguments.
 ARG GOSU_VERSION
-ENV GOSU_VERSION ${GOSU_VERSION:-1.14}
+ENV GOSU_VERSION ${GOSU_VERSION:-1.16}
 
 # Install everything.
 RUN set -ex \
